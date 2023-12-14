@@ -1,0 +1,3 @@
+NPP_Save
+cd $(CURRENT_DIRECTORY)
+C:\Program Files\Python311"$(FILE_NAME)"

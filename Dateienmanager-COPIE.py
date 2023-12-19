@@ -17,10 +17,11 @@ eingabe1 = input("Dateiname: ")
 eingabe2 = input("Nach Buchstaben suchen: ")
 
 #Suche
-if (eingabe1 == 'Namensliste' or eingabe1=='namensliste'):
+if (eingabe1 == 'Namensliste'):
     namensliste = open('namensliste.txt','r')
     inhalt = namensliste.read()
     print(inhalt)
+    namensliste.close()
     if (eingabe2 == 'a' or eingabe2 =='A'):
         namensliste = open('namensliste.txt','r')
         for zeile in namensliste:
@@ -231,10 +232,11 @@ if (eingabe1 == 'Namensliste' or eingabe1=='namensliste'):
                     namensliste.close()
     else:
         print('Keine mögliche Eingabe, nach der gesucht werden kann!')
-elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
+elif (eingabe1 == 'Startfahrzeug'):
     startfahrzeug = open('startfahrzeug.txt','r')
     inhalt = startfahrzeug.read()
     print(inhalt)
+    startfahrzeug.close
     if (eingabe2 == 'a' or eingabe2 == 'A'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
@@ -335,7 +337,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woerter:
+            for wort in woertern:
                 if wort.startswith('M'):
                     print(wort)
                     startfahrzeug.close()
@@ -346,7 +348,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
             for wort in woertern:
                 if wort.startswith('N'):
                     print(wort)
-                    startfahrzeug.close()
+                    startfahrzeug.
     elif (eingabe2 == 'O' or eingabe2 == 'o'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
@@ -387,7 +389,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                 if wort.startswith('S'):
                     print(wort)
                     startfahrzeug.close()
-    elif (eingabe2 == 't' or eingabe2 == 'T'):
+     elif (eingabe2 == 't' or eingabe2 == 'T'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
@@ -395,7 +397,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                 if wort.startswith('T'):
                     print(wort)
                     startfahrzeug.close()
-    elif (eingabe2 == 'U' or eingabe2 == 'u'):
+     elif (eingabe2 == 'U' or eingabe2 == 'u'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
@@ -403,7 +405,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                 if wort.startswith('U'):
                     print(wort)
                     startfahrzeug.close()
-    elif (eingabe2 == 'b' or eingabe2 == 'B'):
+     elif (eingabe2 == 'b' or eingabe2 == 'B'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
@@ -411,7 +413,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                 if wort.startswith('B'):
                     print(wort)
                     startfahrzeug.close()
-    elif (eingabe2 == 'v' or eingabe2 == 'V'):
+     elif (eingabe2 == 'v' or eingabe2 == 'V'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
@@ -419,7 +421,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                 if wort.startswith('V'):
                     print(wort)
                     startfahrzeug.close()
-    elif (eingabe2 == 'W' or eingabe2 == 'w'):
+     elif (eingabe2 == 'W' or eingabe2 == 'w'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
@@ -427,7 +429,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                 if wort.startswith('W'):
                     print(wort)
                     startfahrzeug.close()
-    elif (eingabe2 == 'x' or eingabe2 == 'X'):
+     elif (eingabe2 == 'x' or eingabe2 == 'X'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
@@ -435,7 +437,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                 if wort.startswith('X'):
                     print(wort)
                     startfahrzeug.close()
-    elif (eingabe2 == 'y' or eingabe2 == 'Y'):
+     elif (eingabe2 == 'y' or eingabe2 == 'Y'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
@@ -443,7 +445,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                 if wort.startswith('Y'):
                     print(wort)
                     startfahrzeug.close()
-    elif (eingabe2 == 'z' or eingabe2 == 'Z'):
+     elif (eingabe2 == 'z' or eingabe2 == 'Z'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
@@ -453,10 +455,11 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
                     startfahrzeug.close()
     else:
         print('Keine mögliche Eingabe, nach der gesucht werden kann!')
-elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
+elif (eingabe1 == 'Leistungsvergleich'):
     leistungsvergleich = open('leistungsvergleich.txt','r')
     inhalt = leistungsvergleich.read()
     print(inhalt)
+    leistungsvergleich.close
     if (eingabe2 == '8' or eingabe2 == 'A'):
         leistungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergleich:
@@ -473,7 +476,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('B'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'c' or eingabe2 == 'c'):
+     elif (eingabe2 == 'c' or eingabe2 == 'c'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -481,7 +484,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('C'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'd' or eingabe2 == 'D'):
+     elif (eingabe2 == 'd' or eingabe2 == 'D'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -489,7 +492,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('D'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'e' or eingabe2 == 'E'):
+     elif (eingabe2 == 'e' or eingabe2 == 'E'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -497,7 +500,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('E'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'f' or eingabe2 == 'F'):
+     elif (eingabe2 == 'f' or eingabe2 == 'F'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -505,15 +508,15 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('F'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'g' or eingabe2 == 'G'):
+     elif (eingabe2 == 'g' or eingabe2 == 'G'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
-        for zeile in leistungsvergleich:
+        for zeile in leistungsvergliche:
             woerter = zeile.split()
             for wort in woerter:
                 if wort.startswith('G'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'h' or eingabe2 == 'h'):
+     elif (eingabe2 == 'h' or eingabe2 == 'h'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -521,7 +524,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('H'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'i' or eingabe2 == 'I'):
+     elif (eingabe2 == 'i' or eingabe2 == 'I'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -529,7 +532,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('I'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'j' or eingabe2 == 'J'):
+     elif (eingabe2 == 'j' or eingabe2 == 'J'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -537,7 +540,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('J'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'k' or eingabe2 == 'K'):
+     elif (eingabe2 == 'k' or eingabe2 == 'K'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -545,7 +548,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('K'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'l' or eingabe2 == 'L'):
+     elif (eingabe2 == 'l' or eingabe2 == 'L'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -553,7 +556,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('L'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'm' or eingabe2 == 'M'):
+     elif (eingabe2 == 'm' or eingabe2 == 'M'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -561,7 +564,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('M'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'N' or eingabe2 == 'n'):
+     elif (eingabe2 == 'N' or eingabe2 == 'n'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -569,7 +572,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('N'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'O' or eingabe2 == 'o'):
+     elif (eingabe2 == 'O' or eingabe2 == 'o'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -577,7 +580,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('O'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'p' or eingabe2 == 'P'):
+     elif (eingabe2 == 'p' or eingabe2 == 'P'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -585,7 +588,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('P'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'q' or eingabe2 == 'Q'):
+     elif (eingabe2 == 'q' or eingabe2 == 'Q'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -593,7 +596,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('Q'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'R' or eingabe2 == 'r'):
+     elif (eingabe2 == 'R' or eingabe2 == 'r'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -601,7 +604,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('R'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 's' or eingabe2 == 'S'):
+     elif (eingabe2 == 's' or eingabe2 == 'S'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -609,7 +612,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('S'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'T' or eingabe2 == 't'):
+     elif (eingabe2 == 'T' or eingabe2 == 't'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -617,7 +620,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('T'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'u' or eingabe2 == 'U'):
+     elif (eingabe2 == 'u' or eingabe2 == 'U'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -625,7 +628,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('U'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'v' or eingabe2 == 'V'):
+     elif (eingabe2 == 'v' or eingabe2 == 'V'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -633,7 +636,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('V'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'W' or eingabe2 == 'w'):
+     elif (eingabe2 == 'W' or eingabe2 == 'w'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -641,7 +644,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('W'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'z' or eingabe2 == 'Z'):
+     elif (eingabe2 == 'z' or eingabe2 == 'Z'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -649,7 +652,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('Z'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'x' or eingabe2 == 'X'):
+     elif (eingabe2 == 'x' or eingabe2 == 'X'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -657,7 +660,7 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
                 if wort.startswith('X'):
                     print(wort)
                     leistungsvergleich.close()
-    elif (eingabe2 == 'y' or eingabe2 == 'Y'):
+     elif (eingabe2 == 'y' or eingabe2 == 'Y'):
         leitsungsvergleich = open('leistungsvergleich.txt','r')
         for zeile in leistungsvergliche:
             woerter = zeile.split()
@@ -668,12 +671,13 @@ elif (eingabe1 == 'Leistungsvergleich' or eingabe1== 'leistungsvergleich'):
     else:
         print('Keine mögliche Eingabe, nach der gesucht werden kann!')
 else:
-    startposition = open('startposition.txt','r')
+    startposition = open.('startposition.txt','r')
     inhalt = startposition.read()
     print(inhalt)
+    startposition.close
     if (eingabe2 == 'a' or eingabe2 == 'A'):
          startposition = open('startposition.txt','r')
-         for zeile in startfahrzeug:
+        for zeile in startfahrzeug:
             woerter = zeile.split()
             for wort in woerter:
                 if wort.startswith('A'):

@@ -15,17 +15,20 @@ def beikonst(): #Wenn beide mit konstanter Geschwindigkeit fahren, wird diese Fu
     v2 = int(eingabe3)
     print()
     # Berechnung Ort
-    for t in range(0,1000000):
-        x1 = v1 * t + x0
-        x2 = v2 * t
-        print(x1)
-        print(x2)
-        if x1 == x2:
+    for t in range(0,1000000000):
+        x1 = v1 * (t*0.0001) + x0
+        x2 = v2 * (t*0.0001)
+        x1_round=round(x1,1)
+        x2_round=round(x2,1)
+        if x1_round == x2_round:
             print("t = ", t,)
             print("Zum Zeitpunkt ",t,"Sekunden haben Körper a und b die selbe Strecke zurückgelegt!")
             # Berechnung Momentangeschwindigkeit
             print("Die Geschwindigkeit von Körper a liegt bei ", v1, " Metern pro Sekunde, da diese konstant ist.")
             print("Die Geschwindigkeit von Körper b liegt bei ", v2, " Metern pro Sekunde, da diese konstant ist.")
+            break
+    if x1_round!=x2_round:
+        print("Die beiden Körper haben zum gleichen Zeitpunkt niemals die selbe Strecke zurückgelegt!")
 
 def bkonstcnicht(): #Wenn b sich mit konstanter Geschwindigkeit bewegt, aber c nicht, wird diese Funktion aufgerufen
     eingabe1 = input("Mit welcher Geschwindigkeit bewegt sich Körper a?")
@@ -42,16 +45,20 @@ def bkonstcnicht(): #Wenn b sich mit konstanter Geschwindigkeit bewegt, aber c n
     print()
     # Berechnung Ort
     for t in range(0,1000000):
-        x1 = v1 * t + x0
-        x2 = 0.5 * a * t * t + v2 * t
-        if x1 == x2:
+        x1 = v1 * (t*0.0001) + x0
+        x2 = 0.5 * a * (t*0.0001)*(t*0.0001) + v2 * (t*0.0001)
+        x1_round=round(x1,1)
+        x2_round=round(x2,1)
+        if x1_round == x2_round:
             print("t = ",t)
             print("Zum Zeitpunkt ",t,"Sekunden haben Körper a und b die selbe Strecke zurückgelegt!")
             # Berechnung Momentangeschwindigkeit
             vm = v2 + t * a
             print("Die Geschwindigkeit von Körper a liegt bei ", v1, " Metern pro Sekunde, da diese konstant ist.")
             print("Die Momentangeschwindigkeit von Körper b liegt zum Zeitpunkt", t, "s bei ", vm, "Metern pro Sekunde.")
-
+            break
+    if x1_round!=x2_round:
+        print("Die beiden Körper haben zum gleichen Zeitpunkt niemals die selbe Strecke zurückgelegt!")
 
 def bnichtcnicht(): #Wenn sich beide nicht mit konstanter Geschwindigkeit bewegen, wird diese Funktion aufgerufen
     eingabe1 = input("Mit welcher Beschleunigung beschleunigt Körper a?")
@@ -71,9 +78,11 @@ def bnichtcnicht(): #Wenn sich beide nicht mit konstanter Geschwindigkeit bewege
     print()
     # Berechnung Ort
     for t in range(0,1000000):
-        x1 = 0.5 * a1 * t * t + v2 * t + x0
-        x2 = 0.5 * a2 * t * t + v2 * t
-        if x1 == x2:
+        x1 = 0.5 * a1 * (t*0.0001) * (t*0.0001) + v2 * (t*0.0001) + x0
+        x2 = 0.5 * a2 * (t*0.0001) * (t*0.0001) + v2 * (t*0.0001)
+        x1_round=round(x1,1)
+        x2_round=round(x2,1)
+        if x1_round == x2_round:
             print("t = ",t)
             print("Zum Zeitpunkt ",t,"Sekunden haben Körper a und b die selbe Strecke zurückgelegt!")
             # Berechnung Momentangeschwindigkeit
@@ -81,6 +90,9 @@ def bnichtcnicht(): #Wenn sich beide nicht mit konstanter Geschwindigkeit bewege
             vm2 = v2 + a2 * t
             print("Die Momentangeschwindigkeit von Körper a liegt zum Zeitpunkt", t, "s bei ", vm1, "Metern pro Sekunde.")
             print("Die Momentangeschwindigkeit von Körper b liegt zum Zeitpunkt", t, "s bei ", vm2, "Metern pro Sekunde.")
+            break
+    if x1_round!=x2_round:
+        print("Die beiden Körper haben zum gleichen Zeitpunkt niemals die selbe Strecke zurückgelegt!")
 
 def bnichtckonst(): #Wenn b sich nicht mit konstanter Gewschwindigkeit bewegt aber c schon, wird diese Funktion aufgerufen
     eingabe1 = input("Mit welcher Beschleunigung beschleunigt Körper a?")
@@ -97,8 +109,10 @@ def bnichtckonst(): #Wenn b sich nicht mit konstanter Gewschwindigkeit bewegt ab
     print()
     # Berechnungt Ort
     for t in range(0,1000000):
-        x1 = 0.5 * a1 * t * t + v1 * t + x0
-        x2 = v2 * t
+        x1 = 0.5 * a1 * (t*0.0001) * (t*0.0001 )+ v1 * (t*0.0001) + x0
+        x2 = v2 * (t*0.0001)
+        x1_round=round(x1,1)
+        x2_round=round(x2,1)
         if x1 == x2:
             print("t = ",t)
             print("Zum Zeitpunkt ",t,"Sekunden haben Körper a und b die selbe Strecke zurückgelegt!")
@@ -106,13 +120,17 @@ def bnichtckonst(): #Wenn b sich nicht mit konstanter Gewschwindigkeit bewegt ab
             vm = v1 + t * a1
             print("Die Momentangeschwindigkeit von Körper a liegt zum Zeitpunkt", t, "s bei ", vm, "Metern pro Sekunde.")
             print("Da die Geschwindigkeit von Körper b konstant ist, liegt diese immer noch bei ", v2, ".")
+            break
+    if x1_round!=x2_round:
+        print("Die beiden Körper haben zum gleichen Zeitpunkt niemals die selbe Strecke zurückgelegt!")
 
 # Auswahl der passenden Funktion
-b = input("Wie bewegt sich das erste Fahrzeug? ")
+b = input("Wie bewegt sich Körper a? ")
 print()
-c = input("Wie bewegt sich das zweite Fahrzeug?")
+c = input("Wie bewegt sich Körper b? ")
 print()
-print("--------------------------------------------------------------------------------------------------")
+print("------------------------------------------------------------------------------")
+print("Berechung")
 print()
 
 if b == 'Mit konstanter Geschwindigkeit' and c == 'Mit konstanter Geschwindigkeit':

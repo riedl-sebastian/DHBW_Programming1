@@ -247,7 +247,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('B'):
                     print(wort)
                     startfahrzeug.close()
@@ -263,7 +263,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('D'):
                     print(wort)
                     startfahrzeug.close()
@@ -271,7 +271,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('E'):
                     print(wort)
                     startfahrzeug.close()
@@ -279,7 +279,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('F'):
                     print(wort)
                     startfahrzeug.close()
@@ -287,7 +287,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('G'):
                     print(wort)
                     startfahrzeug.close()
@@ -295,7 +295,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('H'):
                     print(wort)
                     startfahrzeug.close()
@@ -303,7 +303,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('I'):
                     print(wort)
                     startfahrzeug.close()
@@ -311,7 +311,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('J'):
                     print(wort)
                     startfahrzeug.close()
@@ -319,7 +319,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('K'):
                     print(wort)
                     startfahrzeug.close()
@@ -327,7 +327,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('L'):
                     print(wort)
                     startfahrzeug.close()
@@ -343,7 +343,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('N'):
                     print(wort)
                     startfahrzeug.close()
@@ -351,7 +351,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('O'):
                     print(wort)
                     startfahrzeug.close()
@@ -359,7 +359,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('P'):
                     print(wort)
                     startfahrzeug.close()
@@ -367,7 +367,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('Q'):
                     print(wort)
                     startfahrzeug.close()
@@ -375,7 +375,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('R'):
                     print(wort)
                     startfahrzeug.close()
@@ -383,7 +383,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('S'):
                     print(wort)
                     startfahrzeug.close()
@@ -391,7 +391,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('T'):
                     print(wort)
                     startfahrzeug.close()
@@ -399,7 +399,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('U'):
                     print(wort)
                     startfahrzeug.close()
@@ -407,7 +407,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('B'):
                     print(wort)
                     startfahrzeug.close()
@@ -415,7 +415,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('V'):
                     print(wort)
                     startfahrzeug.close()
@@ -423,7 +423,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('W'):
                     print(wort)
                     startfahrzeug.close()
@@ -439,7 +439,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('Y'):
                     print(wort)
                     startfahrzeug.close()
@@ -447,7 +447,7 @@ elif (eingabe1 == 'Startfahrzeug' or eingabe1 == 'startfahrzeug'):
         startfahrzeug = open('startfahrzeug.txt','r')
         for zeile in startfahrzeug:
             woerter in zeile.split()
-            for wort in woertern:
+            for wort in woerter:
                 if wort.startswith('Z'):
                     print(wort)
                     startfahrzeug.close()

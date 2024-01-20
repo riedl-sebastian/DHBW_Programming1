@@ -4,3 +4,4 @@ def sum_of_squares(n):
 print()
 print(sum_of_squares(100))
 print()
+print()

@@ -11,3 +11,4 @@ for a in range(2, 6):
 ergebnisse = np.array(ergebnisse)
 
 print("Die Länge des Arrays ist:", len(ergebnisse))
+print("ProjectEuler Problem")

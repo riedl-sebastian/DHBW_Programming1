@@ -20,3 +20,5 @@ eingabee=int(input("Was ist die zweite Zahl? "))
 b=eingabee
 ans=ggT(a,b)
 print(ans, " ist der größte gemeinsame Teiler von ",a," und ",b," !")
+print()
+print()

@@ -72,13 +72,81 @@ def w():
             pass
     elif auswahl=='Quicksort':
         if auswahl2=="short":
-            Label3['text']="Still in Construction"
+            def aufteilen(lst,niedrig,hoch):
+                pivot=lst[hoch]
+                i=niedrig-1
+                for j in range(niedrig,hoch):
+                    if lst[j]<=pivot:
+                        i =i+1
+                        lst[i],lst[j]=lst[j],lst[i]
+                        lst[i+1],lst[hoch]=lst[hoch],lst[i+1]
+                        return i+1
+            def sort(lst,niedrig,hoch):
+                if niedrig<hoch:
+                    pi=aufteilen(lst,niedrig,hoch)
+                    sort(lst,niedrig,pi-1)
+                    sort(lst,niedrig+1,hoch)
+            elements=[random.randint(1,1000)for _ in range(100)]
+            size=len(elements)
+            sort(elements,0,size-1)
+            Label3['text']=elements
         elif auswahl2=="mid":
-            Label3['text']="Still in Construction"
+            def aufteilen(lst,niedrig,hoch):
+                pivot=lst[hoch]
+                i=niedrig-1
+                for j in range(niedrig,hoch):
+                    if lst[j]<=pivot:
+                        i =i+1
+                        lst[i],lst[j]=lst[j],lst[i]
+                        lst[i+1],lst[hoch]=lst[hoch],lst[i+1]
+                        return i+1
+            def sort(lst,niedrig,hoch):
+                if niedrig<hoch:
+                    pi=aufteilen(lst,niedrig,hoch)
+                    sort(lst,niedrig,pi-1)
+                    sort(lst,niedrig+1,hoch)
+            elements=[random.randint(1,1000)for _ in range(200)]
+            size=len(elements)
+            sort(elements,0,size-1)
+            Label3['text']=elements
         elif auswahl2=="long":
-            Label3['text']="Still in Construction"
+            def aufteilen(lst,niedrig,hoch):
+                pivot=lst[hoch]
+                i=niedrig-1
+                for j in range(niedrig,hoch):
+                    if lst[j]<=pivot:
+                        i =i+1
+                        lst[i],lst[j]=lst[j],lst[i]
+                        lst[i+1],lst[hoch]=lst[hoch],lst[i+1]
+                        return i+1
+            def sort(lst,niedrig,hoch):
+                if niedrig<hoch:
+                    pi=aufteilen(lst,niedrig,hoch)
+                    sort(lst,niedrig,pi-1)
+                    sort(lst,niedrig+1,hoch)
+            elements=[random.randint(1,1000)for _ in range(500)]
+            size=len(elements)
+            sort(elements,0,size-1)
+            Label3['text']=elements
         elif auswahl2=="very long(decades)":
-            Label3['text']="Still in Construction"
+            def aufteilen(lst,niedrig,hoch):
+                pivot=lst[hoch]
+                i=niedrig-1
+                for j in range(niedrig,hoch):
+                    if lst[j]<=pivot:
+                        i =i+1
+                        lst[i],lst[j]=lst[j],lst[i]
+                        lst[i+1],lst[hoch]=lst[hoch],lst[i+1]
+                        return i+1
+            def sort(lst,niedrig,hoch):
+                if niedrig<hoch:
+                    pi=aufteilen(lst,niedrig,hoch)
+                    sort(lst,niedrig,pi-1)
+                    sort(lst,niedrig+1,hoch)
+            elements=[random.randint(1,10000)for _ in range(1000)]
+            size=len(elements)
+            sort(elements,0,size-1)
+            Label3['text']=elements
         else:
             pass
     elif auswahl=='Bubblesort':

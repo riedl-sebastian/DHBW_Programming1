@@ -65,7 +65,7 @@ def w():
                     j=j-1
                 elements[j+1]=m
             endzeit=time.time()
-            geszeit=endtime-startzeit
+            geszeit=endzeit-startzeit
             Label4['text']=geszeit
             Label3['text']=elements
         else:

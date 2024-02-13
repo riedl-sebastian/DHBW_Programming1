@@ -352,11 +352,37 @@ sort.geometry("600x400")
 
 # Elemente
 
+# Fenster inf.:
+def java():
+    java=Tk()
+    java.geometry("800x800")
+    java.title("Code in Java")
+    java.configure(bg="green")
+
+    schlies=Button(java, text="close", command=java.destroy)
+    label1=Label(java,text="Insertionsort:\nUmsetzung der typisch menschlichen Vorgehensweise zum sortieren, z. B.\neines Stapels Karten.\nMan nimmt die erste Karte des ersten Stapels und beginnt mit ihr einen neuen Stapel.\nAlle anderen Karten werden dann der Reihe nach in den neuen Stapel einsortiert.",)
+    label2=Label(java,text="Code:\npublic static void insertion(int [] array){\nint j,m;\n for() int i=1,1<array.length,i++){\ni=j;array[i]=m;\nwhile(j>0 && array[j-1]>m){\narray[j]=array[j-1];\nj--;\n}\narray[j]=m;\n}\n}")
+    label3=Label(java,text="Selectionsort:\nBei diesem Sortierverfahren wird immer das größte Element des\nArrays ausgewählt und an die letzte postion gepackt")
+    label4=Label(java,text="Code:\nprivate static void selection(int [] array){\nint markter=array.lenght-1;\nwhile(marker>=0){\nint max=0;\nfor(int i=1,i<=marker,i++){\nif(array[i]>array[max])max=i;\nswamp(array, i, marker)\n}\nmarker--;\n}\n}")
+    label5=Label(java,text="Bubblesort:\nGrößere von einer Flüssigkeit aufsteigende Blasen überholen die kleineren Blasen.")
+    label6=Label(java,text="private static void bubble(int [] array){\ndo{\nboolean swamped=flase;\nfor(int i=0;i<array.lenght-1,i++){\nif (array[i]>array[i+1]){\nswamp(array, i, i+1);\nswamped=true;\n}while(swamped)\n}")
+
+    label1.pack()
+    label2.pack()
+    label3.pack()
+    label4.pack()
+    label5.pack()
+    label6.pack()
+    schlies.pack()
+
 # Start-Button
 start=Button(sort,text="start",command=w)
 
 # Select-Button:
 select=Button(sort,text="select",command=aktlabel)
+
+# Infos zu verfahren öffenen
+ink=Button(sort, text="Informations to mechanisms",command=java)
 
 # Schließen-Button
 schliessen=Button(sort,text="close",command=sort.destroy)
@@ -395,4 +421,5 @@ combi2.grid(row=4, column=0)
 
 schliessen.grid(row=5, column=3)
 select.grid(row=3,column=0)
+ink.grid(row=5,column=3)
 start.grid(row=5,column=0)

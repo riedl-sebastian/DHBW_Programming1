@@ -27,3 +27,12 @@ def quadratic_primes():
     return product
 
 print(quadratic_primes())
+
+# math Befehle:
+
+# m.pow(zahl,n) für n-te Potenz einer Zahl
+# m.sqrt(zahl)  für Quadratwurzel einer positiven Zahl
+# m.exp(x) für Exponentialfunktion e hoch x
+# m.log(x, a) Logarithmusfunktion von x zur Basis a
+# m.radians(winkelwert) Winkelumrechnung Grad in Radiant
+# m.degrees(winkelwert) Winkelumrechnung von Radiant in Grad
